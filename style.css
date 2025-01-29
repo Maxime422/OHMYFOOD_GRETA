@@ -1,0 +1,155 @@
+/* Les variables */
+:root {
+    --font-weight-bold: 600;
+    --font-weight-extra-bold: 750;
+
+    --color-primary: #9356dc;
+    --color-secondary: #FF79DA;
+    --color-tersiary: #99E2D0;
+    --color-green: #1b6150;
+    --color-white: #ffffff;
+    --color-gray: #f3f3f3;
+    --color-gray-black: #353535;
+    --background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+
+    --font-main: "Roboto", sans-serif;
+    --text-size-small: 1rem;
+    --text-size-medium: 1.2rem;
+    --text-size-large: 1.4rem;
+    --text-size-extra-large: 1.6rem;
+
+    --border-radius-normal: 0.5rem;
+    --border-radius-big: 1rem;
+    --border-radius-extra-big: 1rem;
+    --border-radius-absolu: 5rem;
+
+    --margin-medium: 1rem;
+    --margin-left-right: 0rem 2rem;
+    --margin-extra: 1.5rem;
+
+    --padding-small: 0.4rem;
+    --padding-medium: 0.8rem;
+    --padding-large: 1rem;
+    --padding-extra-large: 2rem;
+    --padding-left-right: 0rem 2rem;
+    --padding-top-bottom: 2rem 0rem;
+
+    --gap-medium: 0.6rem;
+    --gap-large: 1rem;
+    --gap-extra-large: 2rem;
+}
+
+
+/* Toutes les règles primaires */
+body {
+    background-color: var(--color-gray);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: none;
+    border: none;
+    font-family: var(--font-main);
+    font-size: var(--text-size-small);
+}
+
+
+/* Gestion des marges et des paddings principaux */
+footer {
+    padding: var(--padding-extra-large);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Textes (H1, H2, ...) */
+h1, h2 {
+    font-size: var(--text-size-extra-large);
+}
+
+h3, div span, .CTA {
+    font-size: var(--text-size-medium);
+}
+
+/* Font Weight */
+h1, h2, h3, header div span {
+    font-weight: var(--font-weight-extra-bold);
+}
+
+footer li {
+    font-weight: var(--font-weight-bold);
+}
+
+
+/* Header */
+header div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-large);
+    box-shadow: 0 0 1rem #00000049;
+    width: 100%;
+}
+
+
+header div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: var(--padding-large);
+    gap: var(--gap-large);
+    width: 100%;
+}
+
+/* Main */
+
+/* Section title */
+#title_section {
+    margin: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-extra-large);
+}
+
+#title_section a{
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    padding: var(--padding-medium);
+    border-radius: var(--border-radius-absolu);
+    color: var(--color-white);
+    box-shadow: 0 0 1rem #00000049;
+}
+
+/* Fonctionnement */
+#fonct_section {
+    background-color: var(--color-white);
+
+}
+
+
+#fonct_section div {
+    background-color: var(--color-white);
+    margin: var(--padding-large);
+}
+
+
+
+
+/* Footer */
+footer ul {
+    list-style: none;
+}
+
+/* Supprimer */
+figure img {
+    height: 100px;
+}

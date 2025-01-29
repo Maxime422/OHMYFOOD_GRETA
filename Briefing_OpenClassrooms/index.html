@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./sass/main.scss">
+  
+  <!-- Primary Meta Tags -->
+  <link rel="icon" href="./img/favicon.ico" />
+  <title>Accueil - ohmyfood!</title>
+  <meta name="title" content="Accueil - ohmyfood!">
+  <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ohmyfood.mathisbarre.com/">
+  <meta property="og:title" content="Accueil - ohmyfood!">
+  <meta property="og:description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/MathisBarre/MathisBarre_3_04112020/master/src/img/logo/seo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ohmyfood.mathisbarre.com/">
+  <meta property="twitter:title" content="Accueil - ohmyfood!">
+  <meta property="twitter:description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
+  <meta property="twitter:image" content="https://raw.githubusercontent.com/MathisBarre/MathisBarre_3_04112020/master/src/img/logo/seo.png">
+
+  <!-- ANALYTICS -->
+  <script defer src="./scripts/analytics.js"></script>
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader__itemContainer">
+      <div class="loader__item loader__item--1"></div>
+      <div class="loader__item loader__item--2"></div>
+      <div class="loader__item loader__item--3"></div>
+    </div>
+  </div>
+  
+  <!-- DEVS.COFFEE BANNER -->
+  <section class="dc-wrapper">
+    <div class="dc-content">
+      <img class="dc-logo" src="https://devs.coffee/images/logo.svg" alt="devs.coffee logo">
+      <div class="dc-text">
+        Un projet
+        <a href="https://devs.coffee" class="dc-mainlink" id="dc-mainlink">devs.coffee</a>
+        <span class="dc-credit">par<a href="https://mathisbarre.com" class="dc-name">
+            Mathis Barré
+          </a></span>
+      </div>
+      <nav class="dc-nav">
+        <a target="_blank" class="dc-navItem" href="https://reservia.mathisbarre.com" rel="noreferrer">Reservia</a>
+        <span class="cursor-default"> - </span>
+        <a target="_blank" class="dc-navItem" href="https://orinoco-v2.mathisbarre.com" rel="noreferrer">Orinoco</a>
+        <span class="cursor-default"> - </span>
+        <a target="_blank" class="dc-navItem" href="https://github.com/MathisBarre/MathisBarre_7_01082021_front-end" rel="noreferrer">Groupomania</a>
+      </nav>
+    </div>
+  </section>
+  <!-- DEVS.COFFEE BANNER -->
+
+  <header class="header">
+    <h1 class="header__logo">ohmyfood</h1>
+  </header>
+
+  <main>
+    <section class="local">
+      <i class="fas fa-map-marker-alt local__icon"></i>
+      <span class="local__text">Paris, Belleville</span>
+    </section>
+
+    <section class="hero">
+      <h2 class="hero__title">Réservez le menu qui<br>vous convient</h2>
+      <p class="hero__subtitle">
+        Découvrez des restaurants d'exception, séléctionnés par nos soins
+      </p>
+      <a class="hero__btn">
+        Explorer nos restaurants
+      </a>
+    </section>
+
+    <section class="tuto">
+      <div class="container">
+        <h2 class="tuto__title">Fonctionnement</h2>
+        <ol class="tuto__steps">
+          <li class="tuto__step">
+            <i class="tuto__icon fas fa-mobile-alt"></i>
+            <span class="text">Choisissez un restaurant</span>
+          </li>
+          <li class="tuto__step">
+            <i class="tuto__icon fas fa-list-ul"></i>
+            <span class="text">Composez votre menu</span>
+          </li>
+          <li class="tuto__step">
+            <i class="tuto__icon fas fa-store"></i>
+            <span class="text">Dégustez au restaurant</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="restaurants" id="restaurants">
+      <div class="container">
+        <h2 class="restaurants__title">Restaurants</h2>
+        
+        <div class="cards">
+          <a class="card" href="./la-palette-du-gout.html">
+            <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="card__img">
+            <span class="card__badge">Nouveau</span>
+            <footer class="card__footer">
+              <div class="card__content">
+                <h3 class="card__title">La palette du goût</h3>
+                <span class="card__subtitle">Ménilmontant</span>
+              </div>
+              <div class="menu__btn card__btn">
+                <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x"></i>
+              </div>
+            </footer>
+          </a>
+    
+          <a class="card" href="./la-note-enchantee.html">
+            <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" class="card__img">
+            <span class="card__badge">Nouveau</span>
+            <footer class="card__footer">
+              <div class="card__content">
+                <h3 class="card__title">La note enchantée</h3>
+                <span class="card__subtitle">Charonne</span>
+              </div>
+              <div class="menu__btn card__btn">
+                <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x"></i>
+              </div>
+            </footer>
+          </a>
+    
+          <a class="card" href="./a-la-francaise.html">
+            <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="card__img">
+            <!-- <span class="card__badge">Nouveau</span> -->
+            <footer class="card__footer">
+              <div class="card__content">
+                <h3 class="card__title">À la française</h3>
+                <span class="card__subtitle">Cité Rouge</span>
+              </div>
+              <div class="menu__btn card__btn">
+                <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x"></i>
+              </div>
+            </footer>
+          </a>
+    
+          <a class="card" href="./le-delice-des-sens.html">
+            <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" class="card__img">
+            <!-- <span class="card__badge">Nouveau</span> -->
+            <footer class="card__footer">
+              <div class="card__content">
+                <h3 class="card__title">Le délice des sens</h3>
+                <span class="card__subtitle">Folie-Méricourt</span>
+              </div>
+              <div class="menu__btn card__btn">
+                <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x"></i>
+              </div>
+            </footer>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="footer__logo">ohmyfood</span>
+      <ul class="footer__list">
+        <li class="footer__listElt">
+          <a class="footer__link" href="#"></a>
+        </li>
+        <li class="footer__listElt">
+          <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
+        </li>
+        <li class="footer__listElt">
+          <a class="footer__link" href="#">Mentions légales</a>
+        </li>
+        <li class="footer__listElt">
+          <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
