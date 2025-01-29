@@ -8,7 +8,8 @@
     --color-tersiary: #99E2D0;
     --color-green: #1b6150;
     --color-white: #ffffff;
-    --color-gray: #f3f3f3;
+    --color-gray: #f2f2f2;
+    --color-gray-white: #fafafa;
     --color-gray-black: #353535;
     --background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
 
@@ -51,21 +52,18 @@ body {
     box-sizing: border-box;
     line-height: inherit;
     color: inherit;
+    list-style: none;
     text-decoration: none;
     border: none;
     font-family: var(--font-main);
     font-size: var(--text-size-small);
 }
 
-
 /* Gestion des marges et des paddings principaux */
-footer {
-    padding: var(--padding-extra-large);
-}
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: var(--padding-large);
 }
 
 
@@ -83,10 +81,6 @@ h1, h2, h3, header div span {
     font-weight: var(--font-weight-extra-bold);
 }
 
-footer li {
-    font-weight: var(--font-weight-bold);
-}
-
 
 /* Header */
 header div:first-child {
@@ -94,8 +88,9 @@ header div:first-child {
     justify-content: center;
     align-items: center;
     padding: var(--padding-large);
-    box-shadow: 0 0 1rem #00000049;
+    background-color: var(--color-gray-white);
     width: 100%;
+    box-shadow: 0 0 1rem #00000049;
 }
 
 
@@ -103,21 +98,28 @@ header div:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: var(--padding-large);
     gap: var(--gap-large);
     width: 100%;
 }
 
+
+
 /* Main */
 
 /* Section title */
 #title_section {
-    margin: 3rem 0rem;
+    background-color: var(--color-gray-white);
+}
+
+
+#title_section div {
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: var(--gap-extra-large);
 }
 
@@ -126,30 +128,170 @@ header div:last-child {
     padding: var(--padding-medium);
     border-radius: var(--border-radius-absolu);
     color: var(--color-white);
-    box-shadow: 0 0 1rem #00000049;
 }
 
 /* Fonctionnement */
 #fonct_section {
     background-color: var(--color-white);
+}
 
+#fonct_section>div {
+    padding: 2rem 1rem;
+}
+
+#fonct_section div ol{
+    padding-top: var(--padding-large);
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: var(--gap-large);
+}
+
+#fonct_section div ol li{
+    position: relative;
+    padding: var(--padding-extra-large);
+    background-color: var(--color-gray);
+    box-shadow: 0 0 1rem #00000049;
+    border-radius: var(--border-radius-big);
+    width: 100%;
+}
+
+#fonct_section div ol li i{
+    font-size: 20px;
+    color: gray;
+    padding-right: var(--padding-medium);
 }
 
 
-#fonct_section div {
+#fonct_section div ol li span:first-child{
+    position: absolute;
+    left: -1.5%;
+    padding: 4px 9px;
+    text-align: center;
+    background-color: var(--color-primary);
+    border-radius: 100%;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+
+/* Restaurants */
+#restaurants>div {
+    padding-top: var(--padding-large);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-large);
+}
+
+#restaurants>div>div {
+    display: grid;
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: var(--gap-large);
+}
+
+#restaurants>div>div article {
+    border-radius: var(--border-radius-big);
     background-color: var(--color-white);
-    margin: var(--padding-large);
+    overflow: hidden;
+    transition-duration: 0.1s;
+    box-shadow: 0 0 1rem #00000031;
 }
 
+article:hover {
+    transform: scale(1.01);
+}
 
+#restaurants>div>div article img {
+    object-fit: cover;
+    height: 9rem;
+    width: 100%;
+}
+
+#restaurants>div>div article footer {
+    display: flex;
+    padding: var(--padding-large);
+    justify-content: space-between;
+    align-items: center;
+}
+
+#restaurants>div>div article footer i {
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+#restaurants>div>div article footer i:hover {
+    font-weight: 900;
+}
+
+#restaurants>div>div article figure {
+    position: relative;
+    height: 9rem;
+}
+
+#restaurants>div>div article figure span {
+    position: absolute;
+    background-color: var(--color-tersiary);
+    border-radius: 0.2rem;
+    padding: var(--padding-small);
+    color: var(--color-green);
+    top: 10%;
+    right: 1%
+}
 
 
 /* Footer */
-footer ul {
-    list-style: none;
+#footer {
+    background-color: var(--color-gray-black);
+    color: var(--color-white);
 }
 
-/* Supprimer */
-figure img {
-    height: 100px;
+#footer>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-medium);
+}
+
+#footer li i {
+    margin-right: var(--margin-medium);
+}
+
+#footer svg {
+    margin-bottom: var(--margin-medium);
+    width: 120px;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(304%) hue-rotate(15deg) brightness(118%) contrast(100%);
+}
+
+
+@media (min-width: 992px) {
+    #restaurants>div>div {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap-large);
+    }
+
+    #fonct_section div ol{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #footer>div {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #footer ul {
+        flex-direction: column;
+    }
 }
